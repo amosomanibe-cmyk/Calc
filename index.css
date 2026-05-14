@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* background-color: bisque; */
+}
+
+body {
+    width: 60%;
+    margin: 7rem auto;
+    background-color: rgb(14, 15, 15);
+    border: 0.4rem solid rgb(202, 211, 211);
+    border-radius: 10px;
+    height: auto;
+    color: azure;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgb(133, 155, 142);
+
+}
+header h1 {
+    font-size: 21px;
+    margin:auto 0;
+    margin-left: 15px;
+    color: rgb(33, 216, 103);
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    /* margin-left: 6rem; */
+}
+header nav ul lI {
+    display: block;
+    padding: 8px 0;
+    
+    /* margin: auto 1em; */
+}
+header nav ul lI:first-child {
+    color: rgb(33, 216, 103);
+} 
+header nav ul lI:first-child::after {
+    content: '';
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 100%;
+    background: rgb(33, 216, 103);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    /* margin-right: 0; */
+}
+.icons svg,
+.icons i {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.icons span {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 65% auto;
+    gap: 10px;
+}
+.main-sec {
+    /* border: 2px solid rgb(161, 117, 73); */
+
+    width: 70%;
+    height: auto;
+    margin: 2em auto;
+
+}
+.modes {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+.modes h4:first-child {
+    border: 1px solid rgb(33, 216, 103);
+    color: rgb(33, 216, 103);
+}
+.modes h4 {
+    font-size: 10px;
+    border: 1px solid rgb(33, 216, 103);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.ari {
+    margin-top: 1rem;
+    display: block;
+    float: right;
+}
+.ari-sec {
+    clear: right;
+
+    margin-top: 1rem;
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+}
+.nums {
+    clear: right;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:8px;
+    
+    /* margin-top: 20px; */
+    padding-top: 1rem;
+    /* border: 1px solid rgb(128, 33, 216); */
+}
+.nums p {
+    border: 1px solid;
+    font-size: 1rem;
+    padding: 8px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 31, 29);
+}
+.zero {
+    grid-column: span 2;
+    
+}
+
+.nums p:last-child {
+    background: rgb(33, 216, 103);
+}
+
+.pre {
+    margin-top:1.5rem ;
+}
+.pre p {
+    font-size: 14px;
+}
+.pre div {
+    width: 100%;
+    height: 2px;
+    /* padding: 5px; */
+    /* margin: 5px; */
+    margin-top: 10px;
+    background-color: rgba(93, 119, 103, 0.5);
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 0; */
+    left: 3rem;
+    bottom: 7px;
+    /* margin-left: 3rem; */
+    /* margin-bottom: 2rem; */
+    /* padding-bottom: 22px;  */
+    background-color: rgba(10, 253, 103, 0.5);
+}
+
+
+
+.side-bar {
+    height: 100vh;
+    border: 2px solid  rgba(93, 119, 103, 0.5);
+    background-color: rgba(93, 119, 103, 0.2);
+
+}
+
+.his {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.his-num {
+    background-color: rgb(57, 88, 128);
+}
+.his-div {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.his-div .exe {
+    border: 2px solid rgba(93, 119, 103, 0.5);;
+    padding: 10px 0;
+    margin-right: 10px;
+    padding-left: 1rem;
+}
+.his-div div p {
+    margin-top: 5px;
+}
+
+
+.side-bar div{
+    /* margin-top:auto; */
+    position: relative;
+    bottom: 0;
+    /* border: none; */
+    /* border: 2px solid; */
+    /* justify-content: end; */
+}
+
+/*  */
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 15px;
+    height: 2rem;
+    border-top: 2px solid  rgba(93, 119, 103, 0.5);
+}
+
+@media(max-width:767px) {
+
+    .side-bar {
+        display: none;
+        /* border: 2px solid red; */
+    }
+    main {
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    
+}
+    .main-sec {
+        /* width: 100%; */
+        margin: 1.5em auto;
+    }
+    header h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+
+
+    
+    
+    
+    header nav ul {
+        /* margin-left: 0; */
+        /* padding-left: 0; */
+        /* padding-right: 12rem; */
+        /* text-align: left; */
+        /* margin-right: rem; */
+        /* border: 1px solid; */
+        margin-left: 10px;
+
+        /* margin: 0; */
+    /* padding: 0; */
+    /* display: flex; */
+    /* list-style: none; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    
+    /* text-align: center; */
+    /* margin-left: 6rem; */
+    }
+    header nav ul li {
+        font-size: 11px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    
+}
+
+@media(max-width:420px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    header nav {
+        display: none;
+    }
+    header h1 {
+        /* border: solid ; */
+        display: inline;
+        font-size: 22px;
+        /* padding:  0 30px; */
+    }
+    .main-sec {
+        margin-top: 4rem;
+    }
+    .ari {
+        font-size: 12px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+    footer div {
+        gap: 12px;
+    }
+}
