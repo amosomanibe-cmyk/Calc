@@ -174,7 +174,7 @@ main {
     border: 1px solid rgba(202, 211, 211);
 }
 .nums p:hover {
-    background-color: rgba(26, 31, 29, 0.1);
+    background-color: rgba(26, 31, 29, 0.9);
 }
 .zero {
     grid-column: span 2;
